@@ -12,12 +12,6 @@ Repository di setup e riproduzione per **AXIOS-AI**, l'assistente intelligente p
 | `winfarm/` | Profilo Winfarm (Firebird) per WrenAI: istruzioni, query e guida di riferimento. **Senza database** — i file database (*.phs, *.fdb, ecc.) sono esclusi dal `.gitignore`. Credenziali reali in `winfarm/.env` (modello: `winfarm/.env.example`) |
 | `images/` | Immagini: logo, hero-cover, favicon e pills-hands (copiate dal sito originale `axios-ai`) |
 
-## ⚠️ Avvertenze
-
-- **Mai** committare il database (file `arc2000.phs`, ~11 GB) né le credenziali reali (`.env`).
-- Il ruolo di provider resta allo sviluppatore; il deployer dell'agente è l'utente finale (conformità AI Act).
-- Il sito web vive nel repo `axios-ai` (https://github.com/AXIOS-AI/axios-ai), non qui.
-
 ## 📌 Indice
 
 * [CONFIGURAZIONE.md](CONFIGURAZIONE.md) — testo da incollare nella chat di pi
