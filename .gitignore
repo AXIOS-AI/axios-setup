@@ -1,0 +1,21 @@
+# Database Firebird / Winfarm (MAI committare — file enormi)
+*.phs
+*.fdb
+*.fbk
+*.gdb
+*.fod
+*.dat
+*.bak
+
+# Credenziali e variabili sensibili
+.env
+.env.local
+*.env
+!*.example
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

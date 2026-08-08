@@ -1,0 +1,33 @@
+# Curated NL-SQL pairs for this project.
+# Colonne reali verificate sul database (2025-06)
+version: 2
+pairs:
+  - nl: "Quanti prodotti ci sono in totale?"
+    sql: "SELECT COUNT(*) FROM anapro"
+
+  - nl: "Top 10 prodotti per giacenza totale"
+    sql: "SELECT a.km10, a.kdes, m.giac_totale FROM anapro a JOIN magazzino m ON a.km10 = m.km10 ORDER BY CAST(m.giac_totale AS INTEGER) DESC LIMIT 10"
+
+  - nl: "Prodotti con giacenza zero"
+    sql: "SELECT a.km10, a.kdes FROM anapro a JOIN magazzino m ON a.km10 = m.km10 WHERE CAST(m.giac_totale AS INTEGER) = 0"
+
+  - nl: "Scontrini per mese (ultimi 12)"
+    sql: "SELECT strftime('%Y-%m', CAST(data AS DATE)) as mese, COUNT(*) as scontrini FROM lg_testa GROUP BY 1 ORDER BY mese DESC LIMIT 12"
+
+  - nl: "Prodotti più venduti (per quantità)"
+    sql: "SELECT a.kdes, r.km10, SUM(CAST(r.quant AS INTEGER)) as qta FROM lg_righe r JOIN anapro a ON r.km10 = a.km10 GROUP BY r.km10, a.kdes ORDER BY qta DESC LIMIT 10"
+
+  - nl: "Ricette SSN per mese"
+    sql: "SELECT strftime('%Y-%m', CAST(data AS DATE)) as mese, COUNT(*) as ricette FROM nre_testa GROUP BY 1 ORDER BY mese DESC LIMIT 12"
+
+  - nl: "Prodotti in scadenza"
+    sql: "SELECT a.km10, a.kdes, m.scadenza FROM anapro a JOIN magazzino m ON a.km10 = m.km10 WHERE m.scadenza IS NOT NULL AND m.scadenza != '' ORDER BY m.scadenza ASC LIMIT 20"
+
+  - nl: "Fatturato mensile (da giostat)"
+    sql: "SELECT anno, mese, SUM(CAST(im_vend_euro AS DOUBLE)) as fatturato FROM giostat GROUP BY anno, mese ORDER BY anno DESC, mese DESC LIMIT 12"
+
+  - nl: "Top 10 prodotti per fatturato"
+    sql: "SELECT a.kdes, r.km10, SUM(CAST(r.quant AS INTEGER) * CAST(r.prezzo_pub AS DOUBLE)) as fatturato FROM lg_righe r JOIN anapro a ON r.km10 = a.km10 WHERE CAST(r.quant AS INTEGER) > 0 AND CAST(r.prezzo_pub AS DOUBLE) > 0 GROUP BY r.km10, a.kdes ORDER BY fatturato DESC LIMIT 10"
+
+  - nl: "Metodi di pagamento usati"
+    sql: "SELECT incasso as metodo, COUNT(*) as totale FROM lg_testa WHERE incasso IS NOT NULL AND incasso != '' GROUP BY incasso ORDER BY totale DESC"
