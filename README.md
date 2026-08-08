@@ -1,5 +1,10 @@
 # AXIOS-AI — Setup
 
+<p align="center">
+  <img src="images/hero-cover.jpg" alt="AXIOS-AI" width="100%" /><br/>
+  <img src="images/logo.jpg" alt="Logo AXIOS-AI" width="60%" />
+</p>
+
 Repository di setup e riproduzione per **AXIOS-AI**, l'assistente intelligente per la gestione quotidiana della farmacia.
 
 ## Contenuto del repository
