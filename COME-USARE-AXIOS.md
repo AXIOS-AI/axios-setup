@@ -57,3 +57,12 @@ Con il tempo, le regole memorizzate si accumulano. Ogni tanto è utile chiedere 
 ## Cresce con te, non al posto tuo
 
 Più lo usi, più diventa preciso e allineato al tuo modo di lavorare — ma questo succede solo se lo correggi attivamente e gli dai feedback costante. Se lo usi in modo passivo, senza mai fermarti a insegnargli qualcosa, resterà impreciso. Il miglioramento non è automatico: è il risultato diretto di quanto tempo dedichi a formarlo.
+
+## Fai backup periodici — e falli tu, non pi
+
+pi lavora e salva progressi dentro la cartella del progetto (es. `~/progetti/mio-database/`), ma può anche scrivere dati fuori da quella cartella (memoria a lungo termine, wiki, configurazioni di sistema). Per non rischiare di perdere il lavoro fatto, conviene fare copie periodiche:
+
+- della cartella del progetto stessa;
+- delle cartelle dove pi salva dati che non stanno dentro il progetto (es. cartelle di memoria/wiki delle estensioni installate).
+
+Questo backup è meglio farlo **tu direttamente**, non chiederlo a pi: pi può comunque sbagliare, e su un'operazione così delicata è meglio non rischiare. Se un file si corrompe, un backup lo ripristina senza problemi; ma se si perde la memoria di pi, si riparte da zero e tutto il lavoro di formazione fatto va perso. Una copia frequente (anche settimanale) è sufficiente per recuperare rapidamente i progressi in caso di problemi al sistema o al PC.
