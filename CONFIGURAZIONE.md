@@ -14,11 +14,7 @@ Chiedimi dove si trova il database.
 
 Fai così:
 
-1. Leggi il database nella cartella indicata e analizza la sua struttura (tabelle, campi, relazioni).
-2. Configura il motore NL-query scelto, collegato a quel database.
-3. Se il database è Firebird, usa anche la cartella del profilo Firebird se presente accanto al database; altrimenti chiedimi le informazioni mancanti.
-4. Verifica che siano installate e attive le estensioni (elenco reale dei pacchetti attivi su questa macchina, da `~/.pi/agent/settings.json`):
-   - @narumitw/pi-goal (goal tracking)
+1. **Prima di tutto, verifica che siano installate e attive le estensioni** (elenco reale dei pacchetti attivi su questa macchina, da `~/.pi/agent/settings.json`):   - @narumitw/pi-goal (goal tracking)
    - @narumitw/pi-plan-mode (plan mode)
    - @pi-stef/catalog (catalogo pacchetti)
    - @pi-stef/web (estensione web @pi-stef)
@@ -37,9 +33,16 @@ Fai così:
    - pi-hermes-memory (memoria a lungo termine tra le sessioni)
    - pi-agent-pi-markitdown (conversione documento→Markdown (PDF, DOCX, XLSX, immagini, audio...))
    Se qualcuna di queste non serve per questo progetto, non installarla.
-5. Crea per me le regole di comportamento dell'agente (stile delle risposte, sicurezza, limiti, formato).
-6. Crea per questo progetto un file PROJECT.md con le regole del progetto (struttura cartelle, convenzioni, cose da non toccare).
-7. Crea un alias con il nome `axios` (conformità AI Act: io resto deployer, il ruolo di provider resta allo sviluppatore).
-8. Fammi una domanda di prova sul database per verificare che il motore NL-query funziona.
+2. Poi leggi il database nella cartella indicata e analizza la sua struttura (tabelle, campi, relazioni). Se non riconosci il tipo di database, cerca online le informazioni necessarie per capirlo e procedi solo se hai conferma di averlo identificato.
+3. Configura il motore NL-query di WrenAI collegato a quel database.
+4. Crea per me le regole di comportamento dell'agente (stile delle risposte, sicurezza, limiti, formato). Applica queste regole operative:
+   - Rispondi sempre in italiano.
+   - Prima di ogni azione con impatto reale (installazioni, modifiche a file di configurazione, cancellazioni, operazioni sul database, file importanti) spiega cosa stai per fare e aspetta conferma esplicita.
+   - Se non sai qualcosa, dillo e chiedi: non inventare.
+   - Prima di indicazioni tecniche importanti, verifica se ci sono novità aggiornate sull'argomento.
+   - Usa solo i token necessari: risposte brevi, senza commenti superflui.
+5. Crea per questo progetto un file PROJECT.md con le regole del progetto (struttura cartelle, convenzioni, cose da non toccare).
+6. Crea un alias con il nome `axios` (conformità AI Act: io resto deployer, il ruolo di provider resta allo sviluppatore).
+7. Fammi una domanda di prova sul database per verificare che il motore NL-query funziona.
 
 Quando hai finito, riepilogami in elenco cosa hai installato e configurato.
