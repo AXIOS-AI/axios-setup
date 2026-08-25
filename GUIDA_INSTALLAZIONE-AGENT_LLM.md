@@ -1,6 +1,5 @@
 # Guida Installazione pi
 
-> Versione: 3.0 — 08/08/2026
 > Per chi: utenti non tecnici — passo-passo, un comando alla volta
 
 ---
@@ -148,7 +147,7 @@ mkdir -p ~/progetti/mio-database/database
 
 Poi copia il file del database (es. `miodb.sqlite` o `.db`) dentro `~/progetti/mio-database/database/`.
 
-> **Hai un database Winfarm (Firebird)?** Metti anche la cartella del profilo Firebird accanto al database, così pi potrà leggere i dati Winfarm. Se non sai cos'è, salta pure: pi configura tutto da solo chiedendoti le informazioni mancanti.
+> **Hai un database Firebird?** Metti anche la cartella del profilo Firebird accanto al database, così pi potrà leggere i dati. Se non sai cos'è, salta pure: pi configura tutto da solo chiedendoti le informazioni mancanti.
 
 ---
 
