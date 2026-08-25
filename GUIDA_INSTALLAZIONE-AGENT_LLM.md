@@ -147,8 +147,6 @@ mkdir -p ~/progetti/mio-database/database
 
 Poi copia il file del database (es. `miodb.sqlite` o `.db`) dentro `~/progetti/mio-database/database/`.
 
-> **Hai un database Firebird?** Metti anche la cartella del profilo Firebird accanto al database, così pi potrà leggere i dati. Se non sai cos'è, salta pure: pi configura tutto da solo chiedendoti le informazioni mancanti.
-
 ---
 
 ## 5. Configura pi per il tuo database
@@ -161,13 +159,9 @@ Poi, in chat, **copia e incolla tutto il contenuto del file**
 [CONFIGURAZIONE.md](CONFIGURAZIONE.md) (lo trovi accanto a questa guida,
 nella stessa cartella).
 
-> In quel file c'è tutto: pi installa **solo il motore NL-query di WrenAI**,
+> In quel file c'è tutto: pi installa **solo il motore NL-query**,
 > configura il database, installa le estensioni (memoria e wiki), crea le
 > regole dell'agente e le regole per il progetto, e ti fa una domanda di prova.
->
-> Per aggiornare in futuro la configurazione, basta modificare il file
-> `CONFIGURAZIONE.md` e incollarlo di nuovo in chat: **non dovrai toccare
-> questa guida di installazione**.
 
 ---
 

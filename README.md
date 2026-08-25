@@ -2,9 +2,6 @@
 
 Assistente intelligente per la gestione e l'operatività quotidiana.
 
-> **Sito**: <https://axios-ai.github.io/axios-setup/>  
-> **Repository**: <https://github.com/AXIOS-AI/axios-setup>
-
 ---
 
 ### Documentazione
