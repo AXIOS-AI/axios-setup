@@ -1,5 +1,9 @@
 # AXIOS-AI
 
+🎬 **[▶ Guarda i video demo](https://axios-ai.github.io/axios-setup/)**
+
+![AXIOS-AI](images/hero-cover.jpg)
+
 Assistente intelligente per la gestione e l'operatività quotidiana.
 
 ---
