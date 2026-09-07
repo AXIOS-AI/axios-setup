@@ -14,7 +14,8 @@ Chiedimi dove si trova il database.
 
 Fai così:
 
-1. **Prima di tutto, verifica che siano installate e attive le estensioni** (elenco reale dei pacchetti attivi su questa macchina, da `~/.pi/agent/settings.json`):   - @narumitw/pi-goal (goal tracking)
+1. **Prima di tutto, verifica che siano installate e attive le estensioni** (elenco reale dei pacchetti attivi su questa macchina, da `~/.pi/agent/settings.json`):
+   - @narumitw/pi-goal (goal tracking)
    - @narumitw/pi-plan-mode (plan mode)
    - @pi-stef/catalog (catalogo pacchetti)
    - @pi-stef/web (estensione web @pi-stef)
@@ -34,7 +35,7 @@ Fai così:
    - pi-agent-pi-markitdown (conversione documento→Markdown (PDF, DOCX, XLSX, immagini, audio...))
    Se qualcuna di queste non serve per questo progetto, non installarla.
 2. Poi leggi il database nella cartella indicata e analizza la sua struttura (tabelle, campi, relazioni). Se non riconosci il tipo di database, cerca online le informazioni necessarie per capirlo e procedi solo se hai conferma di averlo identificato.
-3. Configura il motore NL-query di WrenAI collegato a quel database.
+3. Configura il motore NL-query scelto, collegato a quel database.
 4. Crea per me le regole di comportamento dell'agente (stile delle risposte, sicurezza, limiti, formato). Applica queste regole operative:
    - Rispondi sempre in italiano.
    - Prima di ogni azione con impatto reale (installazioni, modifiche a file di configurazione, cancellazioni, operazioni sul database, file importanti) spiega cosa stai per fare e aspetta conferma esplicita.
