@@ -6,7 +6,7 @@
 
 > ⚠️ **AVVISO — PROCEDURA INDIPENDENTE DALLA MACCHINA**
 >
-> Questa guida descrive una procedura generica per installare e configurare pi e un agente LLM su **qualsiasi macchina Linux**. Le eventuali referenze a percorsi, provider, nomi di pacchetti, porte o comandi sono esempi: adattali al tuo ambiente.
+> Questa guida descrive una procedura generica per installare e configurare pi e un agente LLM su **Linux**. Le eventuali referenze a percorsi, provider, nomi di pacchetti, porte o comandi sono esempi: adattali al tuo ambiente.
 >
 > **Non cercare di replicare esattamente un PC specifico.** Se un agente su un'altra macchina legge questa guida, deve trattare ogni percorso, credenziale, provider e comando come un valore da verificare e, se necessario, sostituire con quelli del proprio ambiente.
 
@@ -14,11 +14,13 @@
 
 | Cosa | Note |
 | ------ | ------ |
+| Sistema operativo | Linux, Windows o macOS |
 | PC Linux (Ubuntu/Debian) | Qualsiasi, anche vecchio |
+| Windows o macOS | Visita il sito ufficiale: <https://pi.dev/> |
 | Connessione internet | Per installare e per usare l'AI |
 | Chiave API | Scegli un provider nella sezione 3 e registrati |
 
----
+> Per usare pi su Windows o macOS, segui le istruzioni specifiche disponibili sul sito ufficiale: <https://pi.dev/>. I comandi della sezione 2 sono destinati a Linux.
 
 ## 2. Installa Node.js + pi
 
@@ -105,7 +107,7 @@ Registrati su uno di questi servizi e genera una chiave API gratuita:
 
 | Provider | URL | Modelli gratis | Cosa offre |
 | ---------- | ----- | --------------- | ------------ |
-| **OpenCode** | <https://opencode.ai> | ✅ sì | Tanti modelli free (DeepSeek, Llama, Qwen...) |
+| **OpenCode** | <https://opencode.ai> | ✅ sì | Diversi modelli gratuiti (DeepSeek, Llama, Qwen...) |
 | **Kilo** | <https://kilocode.ai> | ✅ sì | 300+ modelli, free tier incluso |
 | **Cline** | <https://cline.bot> | ✅ sì | Modelli gratuiti senza chiave |
 
