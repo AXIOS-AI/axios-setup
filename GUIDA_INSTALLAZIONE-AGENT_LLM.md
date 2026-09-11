@@ -14,13 +14,12 @@
 
 | Cosa | Note |
 | ------ | ------ |
-| Sistema operativo | Linux, Windows o macOS |
-| PC Linux (Ubuntu/Debian) | Qualsiasi, anche vecchio |
-| Windows o macOS | Visita il sito ufficiale: <https://pi.dev/> |
+| Sistema operativo | Linux (consigliato Ubuntu/Debian), Windows o macOS |
+| PC | Anche un PC vecchio basta per iniziare |
 | Connessione internet | Per installare e per usare l'AI |
 | Chiave API | Scegli un provider nella sezione 3 e registrati |
 
-> Per usare pi su Windows o macOS, segui le istruzioni specifiche disponibili sul sito ufficiale: <https://pi.dev/>. I comandi della sezione 2 sono destinati a Linux.
+> **Quale PC scegliere?** Un Ubuntu/Debian, anche vecchio, è perfetto per i test e per la produzione con piccoli lavori; per lavori più intensi serve una macchina più performante. Nel dubbio, fatti consigliare da un collega dello staff con competenze. Mac e Windows vanno bene lo stesso: per installare pi cambia solo il comando, che trovi su <https://pi.dev/>. I comandi della sezione 2 sono destinati a Linux.
 
 ## 2. Installa Node.js + pi
 
